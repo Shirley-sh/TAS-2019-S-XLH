@@ -19,6 +19,14 @@ public class DrawBezierExample : Editor
         Handles.DotHandleCap(0,be.startTangent,Quaternion.identity,0.1f,EventType.Repaint);
         Handles.DotHandleCap(0,be.endTangent,Quaternion.identity,0.1f,EventType.Repaint);
         Handles.DrawBezier(be.startPoint, be.endPoint, be.startTangent, be.endTangent, Color.yellow, null, 5f);
+        Handles.Label(be.startPoint + Vector3.up * 2,
+            "0");
+        Handles.Label(be.startTangent + Vector3.up * 2,
+            "1");
+        Handles.Label(be.endTangent + Vector3.up * 2,
+            "2");
+        Handles.Label(be.endPoint + Vector3.up * 2,
+            "3");
     }
 
     void OnEnable()

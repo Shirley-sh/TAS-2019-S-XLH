@@ -18,13 +18,21 @@ public class CameraController: MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		float pTime = currentTime;
+		int pCurveIndex = (int)pTime % curveList.Count;
+		float pTangent = pTime - (int) pTime;
+		BezierExample pCurve = curveList[pCurveIndex];
+		Vector3 pPos = GetPosFromCurve(pCurve, pTangent);
+		
 		currentTime += Time.deltaTime * speed;
-		int currentRound = (int)currentTime / curveList.Count;
 		int currentCurveIndex = (int)currentTime % curveList.Count;
 		float tangent = currentTime - (int) currentTime;
 		BezierExample currentCurve = curveList[currentCurveIndex];
 		Vector3 pos = GetPosFromCurve(currentCurve, tangent);
-		transform.position = pos;
+		cam.position = pos;
+
+		Quaternion rotation = Quaternion.LookRotation(pos - pPos, Vector3.up);
+		cam.rotation = rotation;
 	}
 	
 	Vector3 GetPosFromCurve(BezierExample curveData, float t)
