@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController: MonoBehaviour {
-	public float speed;
+	public float moveSpeed;
+	public float rotSpeed;
 	public LookAtUnityBezier laub;
 	private List<BezierExample> curveList;
 	private float currentTime;
@@ -24,15 +25,16 @@ public class CameraController: MonoBehaviour {
 		BezierExample pCurve = curveList[pCurveIndex];
 		Vector3 pPos = GetPosFromCurve(pCurve, pTangent);
 		
-		currentTime += Time.deltaTime * speed;
+		currentTime += Time.deltaTime * moveSpeed;
 		int currentCurveIndex = (int)currentTime % curveList.Count;
 		float tangent = currentTime - (int) currentTime;
 		BezierExample currentCurve = curveList[currentCurveIndex];
 		Vector3 pos = GetPosFromCurve(currentCurve, tangent);
-		cam.position = pos;
 
 		Quaternion rotation = Quaternion.LookRotation(pos - pPos, Vector3.up);
-		cam.rotation = rotation;
+		cam.rotation = Quaternion.Lerp(cam.rotation, rotation, Time.deltaTime * rotSpeed);
+		
+		cam.position = Vector3.Lerp(pPos, pos, Time.deltaTime);
 	}
 	
 	Vector3 GetPosFromCurve(BezierExample curveData, float t)
