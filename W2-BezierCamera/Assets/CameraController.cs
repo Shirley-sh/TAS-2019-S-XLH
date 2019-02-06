@@ -1,0 +1,48 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraController: MonoBehaviour {
+	public float speed;
+	public LookAtUnityBezier laub;
+	private List<BezierExample> curveList;
+	private float currentTime;
+
+	private Transform cam;
+	// Use this for initialization
+	void Start() {
+		currentTime = 0;
+		curveList = laub.curveList;
+		cam = Camera.main.transform;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		currentTime += Time.deltaTime * speed;
+		int currentRound = (int)currentTime / curveList.Count;
+		int currentCurveIndex = (int)currentTime % curveList.Count;
+		float tangent = currentTime - (int) currentTime;
+		BezierExample currentCurve = curveList[currentCurveIndex];
+		Vector3 pos = GetPosFromCurve(currentCurve, tangent);
+		transform.position = pos;
+	}
+	
+	Vector3 GetPosFromCurve(BezierExample curveData, float t)
+	{
+		Vector3 a = curveData.startPoint;
+		Vector3 b = curveData.startTangent;
+		Vector3 c = curveData.endTangent;
+		Vector3 d = curveData.endPoint;
+
+		Vector3 ab = Vector3.Lerp(a, b, t);
+		Vector3 bc = Vector3.Lerp(b, c, t);
+		Vector3 cd = Vector3.Lerp(c, d, t);
+
+		Vector3 abc = Vector3.Lerp(ab, bc, t);
+		Vector3 bcd = Vector3.Lerp(bc, cd, t);
+
+		Vector3 final = Vector3.Lerp(abc, bcd, t);
+
+		return final;
+	}
+}
