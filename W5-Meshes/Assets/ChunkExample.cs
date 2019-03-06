@@ -33,9 +33,6 @@ public class ChunkExample : MonoBehaviour
         ApplyMesh();
     }
 
-    private void Update() {
-        Reset();
-    }
 
     public void Reset() {
         CalcMesh();
@@ -49,17 +46,6 @@ public class ChunkExample : MonoBehaviour
         tris = new int[totalTrisInd];
         uVs = new Vector2[totalVertInd];
         normals = new Vector3[totalVertInd];
-    }
-
-    private Vector3 GetVertPos(float x, float z) {
-        float y= 15*(Mathf.PerlinNoise(
-                    (x + transform.position.x)/30,
-                    (z + transform.position.z)/30)+0.5f);
-        y += (Mathf.PerlinNoise(
-                      (x + transform.position.x) *2.234f,
-                      (z + transform.position.z) *2.234f)+0.5f);
-        
-        return new Vector3(x,y,z);    
     }
     
     private void CalcMesh(){
@@ -101,6 +87,20 @@ public class ChunkExample : MonoBehaviour
         mesh.triangles = tris;
         mesh.normals = normals;
         meshFilter.mesh = mesh;
+    }
+    
+    private Vector3 GetVertPos(float x, float z) {
+        //Base Height
+        float y= 15*(Mathf.PerlinNoise(
+                         (x + transform.position.x)/30,
+                         (z + transform.position.z)/30)+0.5f);
+        
+        //Detailed Bump
+        y += (Mathf.PerlinNoise(
+                  (x + transform.position.x) *2.237f,
+                  (z + transform.position.z) *2.237f)+0.5f);
+        
+        return new Vector3(x,y,z);    
     }
 
     private Vector3 GetSmoothedNormal(float x, float z) {
