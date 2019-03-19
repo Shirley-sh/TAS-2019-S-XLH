@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 2116da7329c8141cd8f3be991e62e984
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bush
+    100002: bushBranch
+    100004: bushBranch1
+    100006: cherry
+    100008: cherry 1
+    100010: cherryBranch
+    100012: //RootNode
+    100014: grass
+    100016: pine
+    100018: pine 1
+    100020: pineBranch
+    100022: bush1
+    100024: cherry1
+    400000: bush
+    400002: bushBranch
+    400004: bushBranch1
+    400006: cherry
+    400008: cherry 1
+    400010: cherryBranch
+    400012: //RootNode
+    400014: grass
+    400016: pine
+    400018: pine 1
+    400020: pineBranch
+    400022: bush1
+    400024: cherry1
+    2100000: Vegetation_Texture_Atlas5
+    2100002: Vegetation_Texture_Atlas4
+    2100004: Vegetation_Texture_Atlas
+    2100006: Vegetation_Texture_Atlas2
+    2100008: Vegetation_Texture_Atlas3
+    2100010: Vegetation_Texture_Atlas1
+    2100012: lambert2
+    2100014: lambert1
+    2100016: lambert3
+    2300000: bushBranch
+    2300002: bushBranch1
+    2300004: cherry 1
+    2300006: cherryBranch
+    2300008: grass
+    2300010: pine 1
+    2300012: pineBranch
+    2300014: bush1
+    2300016: cherry1
+    3300000: bushBranch
+    3300002: bushBranch1
+    3300004: cherry 1
+    3300006: cherryBranch
+    3300008: grass
+    3300010: pine 1
+    3300012: pineBranch
+    3300014: bush1
+    3300016: cherry1
+    4300000: grass
+    4300002: cherry
+    4300004: cherryBranch
+    4300006: pineBranch
+    4300008: pine
+    4300010: bushBranch1
+    4300012: bushBranch
+    4300014: bush1
+    4300016: cherry1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
