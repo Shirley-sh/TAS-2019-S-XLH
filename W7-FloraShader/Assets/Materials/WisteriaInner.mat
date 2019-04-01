@@ -29,7 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Cutoff: 0.5
-    - _NormalContribution: 0.05
+    - _NormalContribution: 0.21
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 0.6745283, b: 0.6745283, a: 1}

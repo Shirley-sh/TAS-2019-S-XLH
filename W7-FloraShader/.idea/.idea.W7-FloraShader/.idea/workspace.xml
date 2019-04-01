@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c58467a-9c5d-4a66-b8ca-d90d32ed4c01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../W5-Meshes/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../W5-Meshes/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/ShaderFunctions/BlinnPhongLightWrap.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AmplifyShaderEditor/Plugins/EditorResources/ShaderFunctions/BlinnPhongLightWrap.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Bush.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Bush.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Grass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Grass.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Pine.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Pine.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Trunk.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Trunk.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Wisteria.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Wisteria.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/WisteriaInner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/WisteriaInner.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/flora.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/flora.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,9 +25,10 @@
     <session id="-1774026101">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -32,35 +44,16 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/RailGenerator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <marker date="1552339956013" expanded="false" signature="6:78" ph="..." />
-                <marker date="1552339956013" expanded="true" signature="123:3520" ph="{...}" />
-                <marker date="1552339956013" expanded="true" signature="626:2172" ph="{...}" />
-                <marker date="1552339956013" expanded="true" signature="756:1260" ph="{...}" />
-                <marker date="1552339956013" expanded="true" signature="810:1250" ph="{...}" />
-                <marker date="1552339956013" expanded="true" signature="2231:2602" ph="{...}" />
-                <marker date="1552339956013" expanded="true" signature="2283:2572" ph="{...}" />
-                <marker date="1552339956013" expanded="true" signature="2448:2501" ph="{...}" />
-                <marker date="1552339956013" expanded="true" signature="2627:3518" ph="{...}" />
-                <marker date="1552339956013" expanded="true" signature="2835:2996" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Assets/Rotate.cs">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/RailGenerator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="1219" />
     <option name="height" value="778" />
@@ -80,9 +73,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -99,7 +90,9 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -146,11 +139,12 @@
       <option name="presentableId" value="Default" />
       <updated>1552339910977</updated>
       <workItem from="1552339913075" duration="424000" />
+      <workItem from="1553148964245" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424000" />
+    <option name="totallyTimeSpent" value="432000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -163,18 +157,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1219" height="778" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24938475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -182,10 +168,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="10" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
     </layout>
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -204,24 +197,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/RailGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <marker date="1552339956013" expanded="false" signature="6:78" ph="..." />
-            <marker date="1552339956013" expanded="true" signature="123:3520" ph="{...}" />
-            <marker date="1552339956013" expanded="true" signature="626:2172" ph="{...}" />
-            <marker date="1552339956013" expanded="true" signature="756:1260" ph="{...}" />
-            <marker date="1552339956013" expanded="true" signature="810:1250" ph="{...}" />
-            <marker date="1552339956013" expanded="true" signature="2231:2602" ph="{...}" />
-            <marker date="1552339956013" expanded="true" signature="2283:2572" ph="{...}" />
-            <marker date="1552339956013" expanded="true" signature="2448:2501" ph="{...}" />
-            <marker date="1552339956013" expanded="true" signature="2627:3518" ph="{...}" />
-            <marker date="1552339956013" expanded="true" signature="2835:2996" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Assets/RailGenerator.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Rotate.cs">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

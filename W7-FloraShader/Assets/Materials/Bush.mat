@@ -29,8 +29,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Cutoff: 0.82
-    - _NormalContribution: 0.05
+    - _FrensnelIntensity: 1.12
+    - _NormalContribution: 0.091
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 0.6994037, g: 0.8773585, b: 0.7750535, a: 1}
+    - _Color: {r: 0.5547793, g: 0.8584906, b: 0.68638754, a: 1}
     - _Color0: {r: 0, g: 0, b: 0, a: 0}
