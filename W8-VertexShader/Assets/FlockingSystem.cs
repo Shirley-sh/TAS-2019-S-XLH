@@ -4,32 +4,43 @@ using UnityEngine;
 
 public class FlockingSystem : MonoBehaviour {
     public GameObject agentGO;
+    [Range(1, 300)] public int numOfAgents;
+    [Range(0, 100)] public float range;
     private List<Agent> agents;
- 
+
+    private void OnDrawGizmos() {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(transform.position, range);
+    }
     public class Agent {
         GameObject go;
-        Vector3 pos,vel,acc;
+        Material material;
+        private Vector3 pos, vel, acc;
+        float pVel;
         float rad, destRad, maxSpeed, maxForce, power;
         Vector3 axis;
         
         public Agent(GameObject _go) {
             go = _go;
+            material = go.transform.GetChild(0).GetComponent<Renderer>().material;
             pos = go.transform.position;
-            maxSpeed = 2;
-            maxForce = 0.05f;
+            maxSpeed = 0.01f;
+            maxForce = 0.001f;
             power = 0;
-            vel = new Vector3(Random.Range(-10f,10f),Random.Range(-10f,10f),Random.Range(-10f,10f));
+            vel = new Vector3(Random.Range(-0.1f,0.1f),Random.Range(-0.1f,0.1f),Random.Range(-0.1f,0.1f));
+            pVel = vel.magnitude;
             acc = new Vector3(0,0,0);
         }
 
         public void Run(List<Agent> agents) {
             Flock(agents);
-            UpdateStatus();
             Display();
+            UpdateStatus();
+
         }
     
     
-        void Flock(List<Agent> agents){
+        void Flock(List<Agent> agents){       
             Vector3 sep = Separate(agents);
             Vector3 ali = Align(agents);
             Vector3 coh = Cohesion(agents);
@@ -39,7 +50,8 @@ public class FlockingSystem : MonoBehaviour {
             coh *= 0.5f;
             ApplyForce(sep);
             ApplyForce(ali);
-            ApplyForce(coh);
+            ApplyForce(coh);  
+            CheckEdges();
         }
     
         void UpdateStatus(){
@@ -52,14 +64,17 @@ public class FlockingSystem : MonoBehaviour {
     
             pos += vel;
             acc *= 0;
-            
-            CheckEdges();
     
         }
     
         void Display() {
             go.transform.position = pos;
-            go.transform.LookAt(go.transform.position+vel);
+            Quaternion newRot = Quaternion.LookRotation(vel.normalized);
+            go.transform.rotation = Quaternion.Slerp(go.transform.rotation, newRot, 0.1f*Time.deltaTime);
+            pVel = Mathf.Lerp(pVel, Mathf.Clamp(vel.magnitude * 100, 0.5f, 2f),0.03f*Time.deltaTime);
+            material.SetFloat("_Speed", pVel);
+            float fowardSign = Vector3.Dot(go.transform.forward, vel) > 0 ? 1 : 0;
+            material.SetFloat("_Forward", fowardSign);
         }
         
         Vector3 Seek(Vector3 target){
@@ -72,7 +87,7 @@ public class FlockingSystem : MonoBehaviour {
         }
         
         Vector3 Separate(List<Agent> agents){
-            float desiredSeparation = 200.0f;
+            float desiredSeparation = 2.0f;
             Vector3 steer = new Vector3(0,0,0);
             int count = 0;
             for(int i = 0; i < agents.Count; i++) {
@@ -98,7 +113,7 @@ public class FlockingSystem : MonoBehaviour {
         }
         
         Vector3 Align(List<Agent> agents){
-            int neighbordist = 100;
+            int neighbordist =2;
             Vector3 sum=new Vector3(0,0,0);
             int count = 0;
             for (int i = 0; i < agents.Count; i++) {
@@ -122,7 +137,7 @@ public class FlockingSystem : MonoBehaviour {
         }
         
         Vector3 Cohesion(List<Agent> agents){
-            int neighbordist = 100;
+            int neighbordist = 2;
             Vector3 sum=new Vector3(0,0,0);
             int count = 0;
             for (int i = 0; i < agents.Count; i++) {
@@ -181,8 +196,9 @@ public class FlockingSystem : MonoBehaviour {
         }
         
         void  CheckEdges() {
-            float amount = -0.1f;
-            if(pos.magnitude>800){
+            float amount = -0.02f;
+            if(pos.magnitude>20 && Vector3.Dot(vel, -pos) < 0) {
+                vel *= 0.5f;
                 Vector3 force =pos;
                 force.Normalize();
                 force*=amount;
@@ -194,9 +210,12 @@ public class FlockingSystem : MonoBehaviour {
 
     void Start() {
         agents = new List<Agent>();
-        for (int i = 0; i < 20; i++) {
-            GameObject agentInstance = Instantiate(agentGO);
+        for (int i = 0; i < numOfAgents; i++) {
+            GameObject agentInstance = Instantiate(agentGO,
+                new Vector3(Random.Range(-0.5f*range,0.5f*range),Random.Range(-0.5f*range,0.5f*range),Random.Range(-0.5f*range,0.5f*range)),
+                    Random.rotation);
             agentInstance.transform.parent = transform;
+            agentInstance.transform.localScale = Vector3.one * Random.Range(0.8f,1.5f);
             Agent newAgent = new Agent(agentInstance);
             agents.Add(newAgent);
         }    
