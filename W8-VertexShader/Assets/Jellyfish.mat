@@ -45,7 +45,7 @@ Material:
     - _Foward: 1
     - _Fre: 1
     - _FreF: 1
-    - _Freq: 5
+    - _Freq: 1
     - _FreqF: 1
     - _FreqOffF: 1
     - _FreqOffse: 1
@@ -54,10 +54,10 @@ Material:
     - _Keyword0: 0
     - _Scale: 0.43
     - _ScaleOffset: -0.68
-    - _Spread: 0.5
+    - _Spread: 0.35
     - _VertexFreq: 1.86
     - __dirty: 0
     m_Colors:
     - _Color: {r: 0, g: 0.32666826, b: 1, a: 1}
-    - _Color0: {r: 1, g: 0, b: 0.13455343, a: 0}
+    - _Color0: {r: 1, g: 0, b: 0.1333332, a: 0}
     - _Color1: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 0}
