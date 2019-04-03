@@ -15,8 +15,6 @@ public class FlockingSystem : MonoBehaviour {
         public Agent(GameObject _go) {
             go = _go;
             pos = go.transform.position;
-            destRad = Random.Range(5f,15f);
-            rad=0.01f;
             maxSpeed = 2;
             maxForce = 0.05f;
             power = 0;
@@ -54,7 +52,6 @@ public class FlockingSystem : MonoBehaviour {
     
             pos += vel;
             acc *= 0;
-            rad = Mathf.Lerp(rad, destRad, 0.05f);
             
             CheckEdges();
     
@@ -138,9 +135,10 @@ public class FlockingSystem : MonoBehaviour {
             if (count > 0) {
                 sum /= count;
                 return Seek(sum);
-            } else {
-                return Vector3.zero;
             }
+            
+            return Vector3.zero;
+            
         }
         
         void ApplyForce(Vector3 force){
