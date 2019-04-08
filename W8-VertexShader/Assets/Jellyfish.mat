@@ -38,7 +38,7 @@ Material:
     m_Floats:
     - _Amp: 0.4
     - _Cutoff: 0.5
-    - _DeformAmount: 0.31
+    - _DeformAmount: 0.16
     - _Float0: 0.43
     - _Float1: 2.5
     - _Float3: 1
@@ -59,9 +59,9 @@ Material:
     - _Keyword0: 0
     - _Scale: 0.43
     - _ScaleOffset: -0.68
-    - _Speed: 1.03
+    - _Speed: 1.5
     - _Spread: 1.16
-    - _SpreadAmount: 1.67
+    - _SpreadAmount: 2.46
     - _VertexFreq: 1.86
     - __dirty: 0
     m_Colors:

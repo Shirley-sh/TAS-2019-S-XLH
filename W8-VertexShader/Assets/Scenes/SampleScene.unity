@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agentGO: {fileID: 973942683878713207, guid: 05f55cd1b6dd946d1bed304c9e62fde3, type: 3}
-  numOfAgents: 112
+  numOfAgents: 100
   range: 20
 --- !u!4 &1965832234
 Transform:

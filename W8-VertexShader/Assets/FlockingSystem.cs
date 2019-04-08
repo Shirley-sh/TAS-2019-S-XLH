@@ -19,8 +19,9 @@ public class FlockingSystem : MonoBehaviour {
         float pVel;
         float rad, destRad, maxSpeed, maxForce, power;
         Vector3 axis;
+        float moveRange;
         
-        public Agent(GameObject _go) {
+        public Agent(GameObject _go,float range) {
             go = _go;
             material = go.transform.GetChild(0).GetComponent<Renderer>().material;
             pos = go.transform.position;
@@ -30,6 +31,7 @@ public class FlockingSystem : MonoBehaviour {
             vel = new Vector3(Random.Range(-0.1f,0.1f),Random.Range(-0.1f,0.1f),Random.Range(-0.1f,0.1f));
             pVel = vel.magnitude;
             acc = new Vector3(0,0,0);
+            moveRange = range;
         }
 
         public void Run(List<Agent> agents) {
@@ -197,7 +199,8 @@ public class FlockingSystem : MonoBehaviour {
         
         void  CheckEdges() {
             float amount = -0.02f;
-            if(pos.magnitude>20 && Vector3.Dot(vel, -pos) < 0) {
+            float distance = Vector3.Distance(pos,go.transform.parent.position);
+            if(distance>moveRange && Vector3.Dot(vel, go.transform.parent.position-pos) < 0) {
                 vel *= 0.5f;
                 Vector3 force =pos;
                 force.Normalize();
@@ -216,7 +219,7 @@ public class FlockingSystem : MonoBehaviour {
                     Random.rotation);
             agentInstance.transform.parent = transform;
             agentInstance.transform.localScale = Vector3.one * Random.Range(0.8f,1.5f);
-            Agent newAgent = new Agent(agentInstance);
+            Agent newAgent = new Agent(agentInstance, range);
             agents.Add(newAgent);
         }    
     }
