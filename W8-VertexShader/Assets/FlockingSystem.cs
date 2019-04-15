@@ -12,6 +12,7 @@ public class FlockingSystem : MonoBehaviour {
         Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+    
     public class Agent {
         GameObject go;
         Material material;
@@ -74,6 +75,7 @@ public class FlockingSystem : MonoBehaviour {
             Quaternion newRot = Quaternion.LookRotation(vel.normalized);
             go.transform.rotation = Quaternion.Slerp(go.transform.rotation, newRot, 0.1f*Time.deltaTime);
             pVel = Mathf.Lerp(pVel, Mathf.Clamp(vel.magnitude * 100, 0.5f, 2f),0.03f*Time.deltaTime);
+            
             material.SetFloat("_Speed", pVel);
             float fowardSign = Vector3.Dot(go.transform.forward, vel) > 0 ? 1 : 0;
             material.SetFloat("_Forward", fowardSign);
@@ -215,7 +217,9 @@ public class FlockingSystem : MonoBehaviour {
         agents = new List<Agent>();
         for (int i = 0; i < numOfAgents; i++) {
             GameObject agentInstance = Instantiate(agentGO,
-                new Vector3(Random.Range(-0.5f*range,0.5f*range),Random.Range(-0.5f*range,0.5f*range),Random.Range(-0.5f*range,0.5f*range)),
+                new Vector3(Random.Range(-0.5f*range,0.5f*range),
+                    Random.Range(-0.5f*range,0.5f*range),
+                    Random.Range(-0.5f*range,0.5f*range)),
                     Random.rotation);
             agentInstance.transform.parent = transform;
             agentInstance.transform.localScale = Vector3.one * Random.Range(0.8f,1.5f);

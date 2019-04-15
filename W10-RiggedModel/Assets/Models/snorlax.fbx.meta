@@ -1,0 +1,530 @@
+fileFormatVersion: 2
+guid: 01d58e14c288948cca9c5e998846e7ad
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bicep.L
+    100004: Bicep.R
+    100006: Body
+    100008: Camera
+    100010: Chest
+    100012: Control
+    100014: Foot.L
+    100016: Foot.L_end
+    100018: Foot.R
+    100020: Foot.R_end
+    100022: Forarm.L
+    100024: Forarm.R
+    100026: Hand.L
+    100028: Hand.L_end
+    100030: Hand.R
+    100032: Hand.R_end
+    100034: Head
+    100036: Lamp
+    100038: Mouth.Down
+    100040: Mouth.Down_end
+    100042: Mouth.Up
+    100044: Mouth.Up_end
+    100046: Shin.L
+    100048: Shin.R
+    100050: snorlax
+    100052: //RootNode
+    100054: Thigh.L
+    100056: Thigh.R
+    400000: Armature
+    400002: Bicep.L
+    400004: Bicep.R
+    400006: Body
+    400008: Camera
+    400010: Chest
+    400012: Control
+    400014: Foot.L
+    400016: Foot.L_end
+    400018: Foot.R
+    400020: Foot.R_end
+    400022: Forarm.L
+    400024: Forarm.R
+    400026: Hand.L
+    400028: Hand.L_end
+    400030: Hand.R
+    400032: Hand.R_end
+    400034: Head
+    400036: Lamp
+    400038: Mouth.Down
+    400040: Mouth.Down_end
+    400042: Mouth.Up
+    400044: Mouth.Up_end
+    400046: Shin.L
+    400048: Shin.R
+    400050: snorlax
+    400052: //RootNode
+    400054: Thigh.L
+    400056: Thigh.R
+    4300000: snorlax
+    7400000: Armature|Idle
+    7400002: Armature|LookAround
+    7400004: Armature|Yawn
+    7400006: snorlax|LookAround
+    9500000: //RootNode
+    13700000: snorlax
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body
+    second: {fileID: 2100000, guid: 2a8923bd23ed34e58ab6ca327976f4a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: claw
+    second: {fileID: 2100000, guid: 154afedaf0db54165ab757ecdf13d3eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: darker skin
+    second: {fileID: 2100000, guid: 87922e73a9367460194c2acd86d37c79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye
+    second: {fileID: 2100000, guid: ac48f361f36024516b7d4f5ec7f8fcab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mouth
+    second: {fileID: 2100000, guid: 362ca661e9d2c4e9b962cf4777104fb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {fileID: 2100000, guid: 66f443ec7906442eb949e65d2818f376, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Control
+        weight: 1
+      - path: Armature/Control/Body
+        weight: 1
+      - path: Armature/Control/Body/Chest
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L/Hand.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R/Hand.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Down
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Down/Mouth.Down_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Up
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Up/Mouth.Up_end
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L/Foot.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R/Foot.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: snorlax
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|LookAround
+      takeName: Armature|LookAround
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Control
+        weight: 1
+      - path: Armature/Control/Body
+        weight: 1
+      - path: Armature/Control/Body/Chest
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L/Hand.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R/Hand.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Down
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Down/Mouth.Down_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Up
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Up/Mouth.Up_end
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L/Foot.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R/Foot.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: snorlax
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Yawn
+      takeName: Armature|Yawn
+      firstFrame: 0
+      lastFrame: 113
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Control
+        weight: 1
+      - path: Armature/Control/Body
+        weight: 1
+      - path: Armature/Control/Body/Chest
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L/Hand.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R/Hand.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Down
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Down/Mouth.Down_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Up
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Up/Mouth.Up_end
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L/Foot.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R/Foot.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: snorlax
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: snorlax|LookAround
+      takeName: snorlax|LookAround
+      firstFrame: 0
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Control
+        weight: 1
+      - path: Armature/Control/Body
+        weight: 1
+      - path: Armature/Control/Body/Chest
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L/Hand.L
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.L/Forarm.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R/Hand.R
+        weight: 1
+      - path: Armature/Control/Body/Chest/Bicep.R/Forarm.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Down
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Down/Mouth.Down_end
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Up
+        weight: 1
+      - path: Armature/Control/Body/Chest/Head/Mouth.Up/Mouth.Up_end
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L/Foot.L
+        weight: 1
+      - path: Armature/Control/Body/Thigh.L/Shin.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R/Foot.R
+        weight: 1
+      - path: Armature/Control/Body/Thigh.R/Shin.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: snorlax
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.02
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
