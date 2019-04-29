@@ -19,6 +19,5 @@ public class WalkCycleController : MonoBehaviour {
         float animSpeed = speed/15*2-1;
         anim.SetFloat("Time", (Mathf.Sin(timer)));
         anim.SetFloat("Speed", (Mathf.Sin(animSpeed)));
-
     }
 }
